@@ -1,9 +1,7 @@
 # common command
 * merge branch dev to branch master:
-```
-git checkout master
-git merge dev
-```
+	git checkout master
+	git merge dev
 * git add:
 	git add .   :把工作时的所有变化提交到暂存区，包括文件内容修改(modified)以及新文件(new)，但不包括被删除的文件
 	git add -A  :把工作时的所有变化提交到暂存区，包括文件内容修改(modified)以及新文件(new)，包括被删除的文件
