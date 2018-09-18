@@ -17,7 +17,8 @@
 	git remote remove origin
 2.将当前分支推送到远程仓库：git push -u origin [远程分支名]（第一次推送需要加上-u，以把两个分支关联起来）
 	git push origin [远程分支名]
-3.删除远程分支：git push origin --delete [远程分支名]
+3.删除远程分支：
+	git push origin --delete [远程分支名]
 4.将远程仓库分支更新到本地仓库：
 	git fetch : 更新所有分支
 	git fetch origin master : 更新master分支 
