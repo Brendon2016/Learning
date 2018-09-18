@@ -15,8 +15,10 @@ git merge dev
 	git branch -d [branch]: 删除本地分支
 * 远程仓库
 1.将远程仓库与本地仓库链接：git remote add [远程仓库名，一般为取origin] git@github.com:[github账户名]/[远程仓库名].git
+2.取消本地目录下关联的远程库：
+	git remote remove origin
 2.将当前分支推送到远程仓库：git push -u origin [远程分支名]（第一次推送需要加上-u，以把两个分支关联起来）
-			      git push origin [远程分支名]
+	git push origin [远程分支名]
 3.删除远程分支：git push origin --delete [远程分支名]
 4.将远程仓库分支更新到本地仓库：
 	git fetch : 更新所有分支
