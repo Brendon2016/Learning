@@ -35,7 +35,7 @@ target_link_libraries(one 				# executable file name
 	PUBLIC 						# 
 	two)						# library name
 ```
-**caution:when you need to use a library, you should link the library and include its include path**
+**caution:when you need to use a library, you should link the library and include its include path**  
 6. Making a library
 ```
 add_library(one 					# library name which is going to be generated
