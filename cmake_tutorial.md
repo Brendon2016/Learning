@@ -59,6 +59,16 @@ set_property(TARGET TargetName
              PROPERTY CXX_STANDARD 11)
 ```
 4. common used properties
+```
+# 设置可执行文件的输出路径(EXCUTABLE_OUTPUT_PATH是全局变量)
+set(EXECUTABLE_OUTPUT_PATH [output_path])
+# 设置库文件的输出路径(LIBRARY_OUTPUT_PATH是全局变量)
+set(LIBRARY_OUTPUT_PATH [output_path])
+# 设置C++编译参数(CMAKE_CXX_FLAGS是全局变量)
+set(CMAKE_CXX_FLAGS "-Wall std=c++11")
+# 设置源文件集合(SOURCE_FILES是本地变量即自定义变量)
+set(SOURCE_FILES main.cpp test.cpp ...)
+```
 # Running a command
 1. find packages
 ```
