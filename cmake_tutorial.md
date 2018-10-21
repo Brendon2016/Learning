@@ -1,4 +1,4 @@
-# 基本用法
+# basic usage
 1. Minimum Version
 ```
 cmake_minimum_required(VERSION 3.1)；
@@ -11,13 +11,13 @@ project(MyProject 					# project name
 	LANGUAGES CXX)					# optional, the languages used, it can be C,CXX and so on
 ```
 3. Including directories
-3.1 Including directories only for a specified target
+* Including directories only for a specified target
 ```
 target_include_directories(one 				# executable file name which needs to include directories
 	PUBLIC 
 	include)					# include path
 ```
-3.2 Including directories for add target
+* Including directories for add target
 ```
 include_directories(					# caution, it must noe specify a target name
 	PUBLIC 
