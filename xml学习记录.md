@@ -1,3 +1,4 @@
+[参考资料]（https://blog.csdn.net/xiamentingtao/article/details/51105901）
 # XML文件结构  
 xml文件区分大小写。
 xml文件是结构化数据存储的，相当于一个xml文件就是一个结构体数据，因此只能有一个根元素和众多子元素。以下则为结构体翻译成xml的例子
