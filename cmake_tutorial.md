@@ -85,8 +85,8 @@ find_package(Caffe REQUIRED)				# the parkage name which is going to find
 if (NOT Caffe_FOUND)					# check if it has been found , if the package has been found, there will generate several
     message(FATAL_ERROR "Caffe Not Found!")		# variables like Caffe_INCLUDE_DIRS , Caffe_LIBRARIES
 endif (NOT Caffe_FOUND)
-
 ```
+
 # 编译过程：
 test.c->test.i->test.s->test.o->test.exe
 - Libraries are by default looked for in /lib, /usr/lib and the directories specified by /etc/ld.so.conf
