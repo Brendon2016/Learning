@@ -12,8 +12,8 @@ project(MyProject 					# project name
 ```
 3. find directories for libraries which shall be linked later
 ```
-find_package(libname REQUIRED COMPONENTS          	# 必须在step4.5.6之前执行
-  subname
+find_package(PackageName REQUIRED COMPONENTS          	# 必须在step4.5.6之前执行
+  components
 )
 
 link_directories(libdirectories)  			# 必须在step4.5.6之前执行
