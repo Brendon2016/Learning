@@ -21,3 +21,5 @@ https://wiki.linuxfoundation.org/realtime/documentation/howto/applications/preem
 https://stackoverflow.com/questions/51669724/install-rt-linux-patch-for-ubuntu
 # 编写realtime task
 https://wiki.linuxfoundation.org/realtime/documentation/howto/applications/start
+# 测试实时性
+https://www.cnblogs.com/klb561/p/9123457.html
