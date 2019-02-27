@@ -15,3 +15,8 @@
 4. 可感知OS的调试器
 
 综上，没有基本通讯的场合下一般不用RTOS；与设备的时间同步较好，且不会出现系统过载的情况下，输入设备读取任务无需设置成实时任务。
+# 安装PREEMPT_RT patch
+https://wiki.linuxfoundation.org/realtime/documentation/howto/applications/preemptrt_setup
+https://stackoverflow.com/questions/51669724/install-rt-linux-patch-for-ubuntu
+# 编写realtime task
+https://wiki.linuxfoundation.org/realtime/documentation/howto/applications/start
