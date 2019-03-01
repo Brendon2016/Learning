@@ -57,3 +57,11 @@ getCurrentTime	        //Current simulation time in MATLAB System block
 setNumTicksUntilNextHit //Set the number of ticks in Simulink sample time
 ```
 [specify sample time](https://ww2.mathworks.cn/help/simulink/ug/specify-sample-time-for-matlab-system-block-system-objects.html)
+## matlab与simulink数据交互
+### simulink读取matlab数据
+1. simulink可以直接读取workspace中的数据；
+2. 当需要每个运行周期读取workspace矩阵中一个行向量时，可以用From workspace模块，值得注意的是，当数据维数大于1时，需要将矩阵改成特定[structure](https://www.mathworks.com/help/simulink/ug/load-data-using-the-from-workspace-block-.html)
+### 保存simulink数据到workspace
+1. 添加To Workspace模块；
+2. 添加out模块；
+3. 直接用Scope输出。
