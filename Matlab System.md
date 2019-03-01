@@ -1,4 +1,3 @@
-Matlab System
 # Introduction
 用于使用matlab语言创建simulink模型，优点如下：  
 * 在 MATLAB 和 Simulink 中共享同一个 System object
@@ -9,7 +8,7 @@ Matlab System
 * 处理状态
 * 使用端口标签自定义模块图标
 * 访问两种仿真模式
-MATLAB System基于System object, 因此需先学习这种特殊的matlab类。System object 专为实现和仿真输入随时间变化的动态系统而设计。
+Matlab System是simulink中的一个模块，它通过加载一个system object来实现模块的功能。system object即可在simulink中使用，也可在.m文件等脚本中使用，是专为实现和仿真输入随时间变化的动态系统而设计的。当system object别用来加载到Matlab system中时，可以新增一些方法，如改变Matlab system外观、设置采样周期。
 # System object
 ```
 dft = dsp.FFT();		%创建对象实例；
@@ -36,3 +35,25 @@ system object有构造函数，也有一个初始化函数setupimpl，一个用n
 ### 辅助函数
 * infoimpl : 可用与返回system object 的一些信息，如状态、属性，可自定义需要返回的数据。
 * resetimpl : 复位函数；
+## 定义适用于Matlab system的system object类
+适用于Matlab system的system object类是基于基本的system object，新增如下方法：
+### 模块外观
+```
+getIconImpl	            //Name to display as block icon
+getHeaderImpl	          //Header for System object display
+getInputNamesImpl	      //Names of MATLAB System block input ports
+getOutputNamesImpl	    //Names of MATLAB System block output ports
+getPropertyGroupsImpl	  //Property groups for System object display
+getSimulateUsingImpl	  //Specify value for Simulate using parameter
+showSimulateUsingImpl	  //Visibility of Simulate using parameter
+showFiSettingsImpl	    //Fixed point data type tab visibility for System objects
+```
+### 采样时间
+```
+createSampleTime	      //Create sample time specification object
+getSampleTimeImpl	      //Specify sample time type, offset time, and sample time
+getSampleTime	          //Query sample time
+getCurrentTime	        //Current simulation time in MATLAB System block
+setNumTicksUntilNextHit //Set the number of ticks in Simulink sample time
+```
+[specify sample time](https://ww2.mathworks.cn/help/simulink/ug/specify-sample-time-for-matlab-system-block-system-objects.html)
