@@ -65,3 +65,12 @@ setNumTicksUntilNextHit //Set the number of ticks in Simulink sample time
 1. 添加To Workspace模块；
 2. 添加out模块；
 3. 直接用Scope输出。
+## 在matlab中启动并运行simulink模型
+1. 打开模型
+```
+open_system('模型名')      %不打开模型也可以运行，示波器等也会自动弹出
+```
+2. [运行模型](https://ww2.mathworks.cn/help/simulink/slref/sim.html?searchHighlight=sim&s_tid=doc_srchtitle)
+```
+[ t, x, y ] = sim( model, timespan, options, ut)
+```
