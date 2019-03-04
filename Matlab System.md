@@ -70,7 +70,7 @@ setNumTicksUntilNextHit //Set the number of ticks in Simulink sample time
 ```
 open_system('模型名')      %不打开模型也可以运行，示波器等也会自动弹出
 ```
-2. 获得、设置模型（MyModel）中模块(Gain)参数(Value)
+2. 获得、设置模型（MyModel）中模块(Gain)参数(Value),[参考](https://ww2.mathworks.cn/help/simulink/ug/parameter-values-and-specification-methods.html)
 ```
 paramValue = get_param('MyModel/Gain','Value')
 set_param('MyModel/Gain','Value','25')
