@@ -3,7 +3,7 @@ https://cmake.org/cmake/help/latest/manual/cmake-buildsystem.7.html
 https://cmake.org/cmake/help/latest/manual/cmake-commands.7.html
 1. Minimum Version
 ```
-cmake_minimum_required(VERSION 3.1)；
+cmake_minimum_required(VERSION 3.1)
 ```
 2. Setting a project like project name and descriptions:
 ```
