@@ -70,7 +70,12 @@ setNumTicksUntilNextHit //Set the number of ticks in Simulink sample time
 ```
 open_system('模型名')      %不打开模型也可以运行，示波器等也会自动弹出
 ```
-2. [运行模型](https://ww2.mathworks.cn/help/simulink/slref/sim.html?searchHighlight=sim&s_tid=doc_srchtitle)
+2. 获得、设置模型（MyModel）中模块(Gain)参数(Value)
+```
+paramValue = get_param('MyModel/Gain','Value')
+set_param('MyModel/Gain','Value','25')
+```
+3. [运行模型](https://ww2.mathworks.cn/help/simulink/slref/sim.html?searchHighlight=sim&s_tid=doc_srchtitle)
 ```
 [ t, x, y ] = sim( model, timespan, options, ut)
 ```
